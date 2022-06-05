@@ -1,0 +1,37 @@
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+// Create users
+
+{
+  "name": "Geaorge Mandel",
+  "age": "81",
+  "email": "geaorge.mandel@email.com"  
+}
+
+###
+
+// Get all users
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+
+// Get user for id
+GET http://localhost:9000/api/users/629bbeaa737838722e01d63f HTTP/1.1
+
+###
+
+// Updat user
+PUT http://localhost:9000/api/users/629bc9eef54ab460a9b62d41 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Geaorge Mandel",
+  "age": "85",
+  "email": "geaorge.mandel@email.com"  
+}
+
+###
+
+// Delete user
+DELETE http://localhost:9000/api/users/629bc9eef54ab460a9b62d41 HTTP/1.1
